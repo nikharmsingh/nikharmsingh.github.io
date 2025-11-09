@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nikhar Mahendra Singh Portfolio</title>
+    <title>Nikhar Mahendra Singh - Data Analyst Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Data Analyst with 3+ years of experience in data science, analytics, ETL pipelines, and API development. Specialized in SQL, Python, Flask, Django, Power BI, and AWS.">
+    <meta name="keywords" content="Data Analyst, Data Science, Python, SQL, ETL, Power BI, Flask, Django, AWS, Portfolio">
+    <meta name="author" content="Nikhar Mahendra Singh">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nikhar Mahendra Singh - Data Analyst Portfolio">
+    <meta property="og:description" content="Data Analyst with 3+ years of experience in data science, analytics, ETL pipelines, and API development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nikharmsingh.github.io/">
+    <meta property="og:image" content="https://nikharmsingh.github.io/images/about-me.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nikhar Mahendra Singh - Data Analyst Portfolio">
+    <meta name="twitter:description" content="Data Analyst with 3+ years of experience in data science, analytics, ETL pipelines, and API development.">
+    <meta name="twitter:image" content="https://nikharmsingh.github.io/images/about-me.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/about-me.png">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -109,15 +130,98 @@
   transform: scale(1.1);
 }
 
+/* Skip to content accessibility */
+.skip-to-content:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #ffbd39;
+  color: #000;
+  padding: 10px 20px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Dark mode toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ffbd39;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+
+/* Light mode styles */
+body.light-mode {
+  background: #f8f9fa !important;
+  color: #333 !important;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode .h1,
+body.light-mode .h2,
+body.light-mode .h3,
+body.light-mode .h4,
+body.light-mode .h5 {
+  color: #333 !important;
+}
+
+body.light-mode .ftco_navbar {
+  background: #fff !important;
+}
+
+body.light-mode .hero {
+  background: #e9ecef !important;
+}
+
+body.light-mode .ftco-section {
+  background: #f8f9fa !important;
+}
+
+body.light-mode .resume-wrap,
+body.light-mode .blog-entry,
+body.light-mode .box {
+  background: #fff !important;
+  color: #333 !important;
+}
+
+body.light-mode p,
+body.light-mode span:not(.icon-youtube):not(.icon-linkedin):not(.icon-github):not(.icon-instagram):not(.icon-map-signs):not(.icon-phone2):not(.icon-paper-plane):not(.icon-globe) {
+  color: #666 !important;
+}
+
 
 </style>
 
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+
+	  <!-- Skip to main content for accessibility -->
+	  <a href="#home-section" class="skip-to-content" style="position: absolute; left: -9999px; z-index: 999;">Skip to main content</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" role="navigation" aria-label="Main navigation">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Nikhar Mahendra Singh</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,8 +263,9 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Engineer  ',
-						'Youtuber  ',
+						'Data Analyst  ',
+						'Data Engineer  ',
+						'Problem Solver  ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -212,7 +317,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Nikhar Mahendra Singh - Data Analyst" loading="lazy">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
@@ -220,7 +325,7 @@
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Nikhar Mahendra Singh</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>1 Years 11 Months</span></p>
+										<p><span class="title-s">Experience: </span> <span>3+ Years</span></p>
 										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
 									  </div>
 									</div>
@@ -233,28 +338,28 @@
 										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
-									
+
 									<span>Python</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Flask</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
-									
+
+									<span>Flask</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
 									<span>Django</span> <span class="pull-right">85%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
-									
-									<span>Data Analysis</span> <span class="pull-right">80%</span>
+
+									<span>Data Analysis</span> <span class="pull-right">90%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 								</div>
@@ -269,8 +374,8 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>With over 1.5 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering. 
-									Proficient in data analysis, statistical analysis, ETL pipelines &amp; api's development. 
+								<p>With over 3 years of comprehensive experience in the field of data science & analytics, accompanied by a bachelor's degree in engineering.
+									Proficient in data analysis, statistical analysis, ETL pipelines &amp; API development.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
 									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, &amp; Auto Mobile</span></li>
@@ -309,7 +414,7 @@
           <div class="col-md-10 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Data Analyst with 1+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, algorithms and project management.</p>
+            <p>Data Analyst with 3+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, algorithms and project management.</p>
           </div>
         </div>
 
@@ -322,7 +427,7 @@
 		<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">Apr 2025-Present</span>
+						<span class="date">Apr 2024-Present</span>
 						<h2>Data Analyst - 2</h2>
 						<span class="position">Tekion Corp</span>
 						<p class="mt-4">Tekion Corp, a leading automobile saas company, that Unify DMS, CRM, Digital Retail, Analytics, and more
@@ -338,7 +443,7 @@
 
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">Jun 2022-Apr 2025</span>
+						<span class="date">Jun 2022-Apr 2024</span>
 						<h2>Operations Analyst (Data Analyst - 1)</h2>
 						<span class="position">Tekion Corp</span>
 						<p class="mt-4">Tekion Corp, a leading automobile saas company, that Unify DMS, CRM, Digital Retail, Analytics, and more
@@ -420,33 +525,33 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/nikharmsingh/TwittonAPI" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="https://github.com/nikharmsingh/TwittonAPI" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" target="_blank" rel="noopener noreferrer" aria-label="Twitton - Twitter Clone APP Project">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/nikharmsingh/TwittonAPI">Twitton - Twitter Clone APP</a></h3>
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/TwittonAPI" target="_blank" rel="noopener noreferrer">Twitton - Twitter Clone APP</a></h3>
                 <p>Twitton, A Twitter Clone created using Flask Rest Api's as backend and sqlite as database. </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/nikharmsingh/digitalfarmingsolulu" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              <a href="https://github.com/nikharmsingh/digitalfarmingsolulu" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');" target="_blank" rel="noopener noreferrer" aria-label="Digital Farming Solution Project">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/nikharmsingh/digitalfarmingsolulu">Digital Farming Solution</a></h3>
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/digitalfarmingsolulu" target="_blank" rel="noopener noreferrer">Digital Farming Solution</a></h3>
                 <p>Digital Farming Solutions, is our attempt to provide state-of-the-art solutions to people in the field of Agriculture, and help them increase the quality and quantity of their produce.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/nikharmsingh/bookmarkapi" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="https://github.com/nikharmsingh/bookmarkapi" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');" target="_blank" rel="noopener noreferrer" aria-label="Bookmark API Project">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/nikharmsingh/bookmarkapi">Bookmark API</a></h3>
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/bookmarkapi" target="_blank" rel="noopener noreferrer">Bookmark API</a></h3>
                 <p>Designed a Bookmark API for URL and also implement a tinyurl service on top of it.</p>
               </div>
             </div>
@@ -454,25 +559,25 @@
         </div>
 	<br>
 		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
+		<div class="row d-flex justify-content-center">
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/nikharmsingh/Projects/tree/main/AI%20Assistant%20Python" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				<a href="https://github.com/nikharmsingh/Projects/tree/main/AI%20Assistant%20Python" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');" target="_blank" rel="noopener noreferrer" aria-label="AI Voice Assistant Project">
 				</a>
 				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/nikharmsingh/Projects/tree/main/AI%20Assistant%20Python">AI Voice Assistant using Python</a></h3>
+
+				  <h3 class="heading"><a href="https://github.com/nikharmsingh/Projects/tree/main/AI%20Assistant%20Python" target="_blank" rel="noopener noreferrer">AI Voice Assistant using Python</a></h3>
 				  <p>Developed a Voice Assistant using Python and other various libraries like text-to-speech, PyAudio and more.</p>
 				</div>
 			  </div>
 			</div>
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/nikharmsingh/Python/tree/main/ML/Churn-Prediction" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				<a href="https://github.com/nikharmsingh/Python/tree/main/ML/Churn-Prediction" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');" target="_blank" rel="noopener noreferrer" aria-label="Customer Churn Prediction Project">
 				</a>
 				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/nikharmsingh/Python/tree/main/ML/Churn-Prediction">Customer Churn Prediction for BrowserX </a></h3>
+
+				  <h3 class="heading"><a href="https://github.com/nikharmsingh/Python/tree/main/ML/Churn-Prediction" target="_blank" rel="noopener noreferrer">Customer Churn Prediction for BrowserX </a></h3>
 				  <p>Performed various analysis on BroswerX data to find out the churn percentage and given insights on how to overcome.</p>
 				</div>
 			  </div>
@@ -589,17 +694,16 @@
 			<br>
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="#" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+					<h2>Have a<span> Question?  </span> <a href="mailto:nikharms2504@gmail.com" class="btn btn-primary py-3 px-5">Email Me</a> </h2>
 				</div>
 			</div>
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@wizly25"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/nikharmsingh/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/singhnikhar/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@wizly25" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/nikharmsingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin"></span></a></li>
+					  <li class="ftco-animate"><a href="https://github.com/nikharmsingh" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="icon-github"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/singhnikhar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
 		   </div>
@@ -626,6 +730,10 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  <!-- Dark Mode Toggle Button -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+    <span id="theme-icon">🌙</span>
+  </button>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -639,8 +747,38 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
+
   <script src="js/main.js"></script>
-    
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    // Check for saved theme preference or default to dark mode
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    // Apply saved theme on page load
+    if (currentTheme === 'light') {
+      document.body.classList.add('light-mode');
+      themeIcon.textContent = '☀️';
+    }
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('light-mode');
+
+      let theme = 'dark';
+      if (document.body.classList.contains('light-mode')) {
+        theme = 'light';
+        themeIcon.textContent = '☀️';
+      } else {
+        themeIcon.textContent = '🌙';
+      }
+
+      // Save theme preference
+      localStorage.setItem('theme', theme);
+    });
+  </script>
+
   </body>
 </html>
