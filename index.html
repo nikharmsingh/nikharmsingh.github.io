@@ -143,73 +143,9 @@
   border-radius: 5px;
 }
 
-/* Dark mode toggle button */
-.theme-toggle {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #ffbd39;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-}
 
-.theme-toggle:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 8px rgba(0,0,0,0.4);
-}
 
-/* Light mode styles */
-body.light-mode {
-  background: #f8f9fa !important;
-  color: #333 !important;
-}
 
-body.light-mode h1,
-body.light-mode h2,
-body.light-mode h3,
-body.light-mode h4,
-body.light-mode h5,
-body.light-mode .h1,
-body.light-mode .h2,
-body.light-mode .h3,
-body.light-mode .h4,
-body.light-mode .h5 {
-  color: #333 !important;
-}
-
-body.light-mode .ftco_navbar {
-  background: #fff !important;
-}
-
-body.light-mode .hero {
-  background: #e9ecef !important;
-}
-
-body.light-mode .ftco-section {
-  background: #f8f9fa !important;
-}
-
-body.light-mode .resume-wrap,
-body.light-mode .blog-entry,
-body.light-mode .box {
-  background: #fff !important;
-  color: #333 !important;
-}
-
-body.light-mode p,
-body.light-mode span:not(.icon-youtube):not(.icon-linkedin):not(.icon-github):not(.icon-instagram):not(.icon-map-signs):not(.icon-phone2):not(.icon-paper-plane):not(.icon-globe) {
-  color: #666 !important;
-}
 
 /* Technical Skills Section */
 .services-1 {
@@ -326,26 +262,7 @@ body.light-mode span:not(.icon-youtube):not(.icon-linkedin):not(.icon-github):no
   border-color: rgba(255, 255, 255, 0.95);
 }
 
-/* Light mode adjustments for skills section */
-body.light-mode .services-1 {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-}
 
-body.light-mode .services-1:hover {
-  background: #f8f9fa;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .services-1 h3 {
-  color: #333;
-}
-
-body.light-mode .tech-stack .badge-secondary {
-  background: #f0f0f0;
-  color: #666;
-  border: 1px solid #ddd;
-}
 
 /* Metrics Section */
 .metric-card {
@@ -398,19 +315,7 @@ body.light-mode .tech-stack .badge-secondary {
   letter-spacing: 0.3px;
 }
 
-body.light-mode .metric-card {
-  background: linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%);
-  border-left: 5px solid #ffbd39;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
 
-body.light-mode .metric-card:hover {
-  box-shadow: 0 8px 25px rgba(255, 189, 57, 0.2);
-}
-
-body.light-mode .metric-card p {
-  color: #555;
-}
 
 /* Project Tech Badges */
 .project-tech-stack {
@@ -441,17 +346,7 @@ body.light-mode .metric-card p {
   box-shadow: 0 4px 12px rgba(255, 189, 57, 0.4);
 }
 
-body.light-mode .project-tech-stack .tech-badge {
-  background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
-  color: #856404;
-  border: 1.5px solid #ffd966;
-}
 
-body.light-mode .project-tech-stack .tech-badge:hover {
-  background: #ffbd39;
-  color: #000;
-  box-shadow: 0 4px 12px rgba(255, 189, 57, 0.3);
-}
 
 /* Smooth Scroll */
 html {
@@ -472,9 +367,7 @@ html {
   transform: translateX(5px);
 }
 
-body.light-mode .resume-wrap:hover {
-  background: rgba(0, 0, 0, 0.02);
-}
+
 
 .resume-wrap h2 {
   transition: color 0.3s ease;
@@ -508,14 +401,7 @@ body.light-mode .resume-wrap:hover {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-body.light-mode .blog-entry {
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
 
-body.light-mode .blog-entry:hover {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
 
 /* Section Headings Enhancement */
 .heading-section h2 {
@@ -1318,11 +1204,6 @@ body.light-mode .blog-entry:hover {
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  <!-- Dark Mode Toggle Button -->
-  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-    <span id="theme-icon">🌙</span>
-  </button>
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -1337,36 +1218,6 @@ body.light-mode .blog-entry:hover {
   <script src="js/scrollax.min.js"></script>
 
   <script src="js/main.js"></script>
-
-  <!-- Dark Mode Toggle Script -->
-  <script>
-    // Check for saved theme preference or default to dark mode
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-
-    // Apply saved theme on page load
-    if (currentTheme === 'light') {
-      document.body.classList.add('light-mode');
-      themeIcon.textContent = '☀️';
-    }
-
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', function() {
-      document.body.classList.toggle('light-mode');
-
-      let theme = 'dark';
-      if (document.body.classList.contains('light-mode')) {
-        theme = 'light';
-        themeIcon.textContent = '☀️';
-      } else {
-        themeIcon.textContent = '🌙';
-      }
-
-      // Save theme preference
-      localStorage.setItem('theme', theme);
-    });
-  </script>
 
   </body>
 </html>
