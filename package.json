@@ -1,0 +1,16 @@
+{
+  "name": "nikharmsingh-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass scss/style.scss css/style.min.css --no-source-map --style=compressed && postcss css/style.min.css -o css/style.min.css",
+    "build": "npm run build:css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "cssnano": "^5.0.0",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^9.0.0",
+    "sass": "^1.54.0"
+  }
+}
