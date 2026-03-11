@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nikhar Mahendra Singh - Data Engineer Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Data Engineer with 3+ years of experience building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure. Specialized in Python, PySpark, Airflow, Spark, Redshift, Snowflake, and AWS.">
+    <meta name="keywords" content="Data Engineer, ETL Pipeline, Data Warehouse, PySpark, Apache Spark, Airflow, Snowflake, Redshift, AWS, Python, SQL, dbt, Kafka, Portfolio">
+    <meta name="author" content="Nikhar Mahendra Singh">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nikhar Mahendra Singh - Data Engineer Portfolio">
+    <meta property="og:description" content="Data Engineer with 3+ years of experience building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nikharmsingh.github.io/">
+    <meta property="og:image" content="https://nikharmsingh.github.io/images/about-me.png">
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://nikharmsingh.github.io/">
+
+		<!-- Structured data (Person) -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Nikhar Mahendra Singh",
+			"url": "https://nikharmsingh.github.io/",
+			"sameAs": [
+				"https://github.com/nikharmsingh",
+				"https://www.linkedin.com/in/nikharmsingh/",
+				"https://www.youtube.com/@wizly25"
+			],
+			"jobTitle": "Data Engineer",
+			"description": "Data Engineer with 3+ years of experience building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure. Skilled in Python, PySpark, Spark, Airflow, Snowflake, Redshift, and AWS."
+		}
+		</script>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nikhar Mahendra Singh - Data Engineer Portfolio">
+    <meta name="twitter:description" content="Data Engineer with 3+ years of experience building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure.">
+    <meta name="twitter:image" content="https://nikharmsingh.github.io/images/about-me.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/about-me.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/revamp.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/* Skip to content accessibility */
+.skip-to-content:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #ffbd39;
+  color: #000;
+  padding: 10px 20px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+
+
+
+/* Technical Skills Section */
+.services-1 {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  padding: 35px;
+  border-radius: 15px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.services-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffbd39, #ff6b6b, #4a90e2);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.services-1:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(255, 189, 57, 0.25), 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 189, 57, 0.4);
+}
+
+.services-1:hover::before {
+  opacity: 1;
+}
+
+.services-1 .icon {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #ffbd39 0%, #ff9500 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 189, 57, 0.3);
+}
+
+.services-1:hover .icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 6px 20px rgba(255, 189, 57, 0.5);
+}
+
+.services-1 h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-stack .badge {
+  padding: 10px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 25px;
+  background: rgba(255, 189, 57, 0.15);
+  color: #ffbd39;
+  border: 1.5px solid rgba(255, 189, 57, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+  letter-spacing: 0.3px;
+}
+
+.tech-stack .badge:hover {
+  background: #ffbd39;
+  color: #000;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 189, 57, 0.4);
+  border-color: #ffbd39;
+}
+
+.tech-stack .badge-primary {
+  background: linear-gradient(135deg, rgba(255, 189, 57, 0.35) 0%, rgba(255, 189, 57, 0.25) 100%);
+  color: #ffbd39;
+  border: 1.5px solid rgba(255, 189, 57, 0.6);
+  font-weight: 700;
+}
+
+.tech-stack .badge-primary:hover {
+  background: #ffbd39;
+  color: #000;
+  box-shadow: 0 6px 20px rgba(255, 189, 57, 0.5);
+}
+
+.tech-stack .badge-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.tech-stack .badge-secondary:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  border-color: rgba(255, 255, 255, 0.95);
+}
+
+
+
+/* Metrics Section */
+.metric-card {
+  background: linear-gradient(135deg, rgba(255, 189, 57, 0.12) 0%, rgba(255, 189, 57, 0.08) 100%);
+  border-left: 5px solid #ffbd39;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffbd39, #ff9500);
+  transition: width 0.4s ease;
+}
+
+.metric-card:hover {
+  background: linear-gradient(135deg, rgba(255, 189, 57, 0.18) 0%, rgba(255, 189, 57, 0.12) 100%);
+  transform: translateX(8px) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 189, 57, 0.3);
+}
+
+.metric-card:hover::before {
+  width: 100%;
+  opacity: 0.1;
+}
+
+.metric-card h4 {
+  color: #ffbd39;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(255, 189, 57, 0.3);
+}
+
+.metric-card p {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+
+
+/* Project Tech Badges */
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.project-tech-stack .tech-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: linear-gradient(135deg, rgba(255, 189, 57, 0.2) 0%, rgba(255, 189, 57, 0.15) 100%);
+  color: #ffbd39;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1.5px solid rgba(255, 189, 57, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.project-tech-stack .tech-badge:hover {
+  background: #ffbd39;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 189, 57, 0.4);
+}
+
+
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Enhanced Resume Cards */
+.resume-wrap {
+  transition: all 0.3s ease;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.resume-wrap:hover {
+  background: rgba(255, 255, 255, 0.03);
+  transform: translateX(5px);
+}
+
+
+
+.resume-wrap h2 {
+  transition: color 0.3s ease;
+}
+
+.resume-wrap:hover h2 {
+  color: #ffbd39 !important;
+}
+
+.resume-wrap ul li {
+  position: relative;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.resume-wrap ul li:hover {
+  padding-left: 10px;
+  color: #ffbd39;
+}
+
+/* Enhanced Project Cards */
+.blog-entry {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.blog-entry:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Section Headings Enhancement */
+.heading-section h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffbd39, #ff9500);
+  border-radius: 2px;
+}
+
+/* Contact Form */
+.contact-form-wrap {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1px solid rgba(255,189,57,0.2);
+  border-radius: 16px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact-form-wrap h3 {
+  color: #fff;
+  font-weight: 700;
+}
+.contact-input {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1.5px solid rgba(255,255,255,0.15) !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  padding: 14px 18px !important;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-input::placeholder { color: rgba(255,255,255,0.45) !important; }
+.contact-input:focus {
+  border-color: #ffbd39 !important;
+  box-shadow: 0 0 0 3px rgba(255,189,57,0.2) !important;
+  outline: none;
+  background: rgba(255,255,255,0.09) !important;
+}
+.contact-input.is-invalid { border-color: #ff6b6b !important; }
+
+/* Project Filter Buttons */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.filter-btn {
+  padding: 10px 24px;
+  border: 2px solid rgba(255, 189, 57, 0.5);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.4px;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background: #ffbd39;
+  color: #000;
+  border-color: #ffbd39;
+  box-shadow: 0 4px 15px rgba(255, 189, 57, 0.4);
+}
+.project-item {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.project-item.hidden {
+  display: none !important;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  background: #ffbd39;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 189, 57, 0.5);
+  transition: all 0.3s ease;
+}
+#back-to-top:hover {
+  background: #e6a800;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 189, 57, 0.6);
+}
+#back-to-top.show { display: block; }
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .services-1 {
+    padding: 25px;
+  }
+
+  .metric-card h4 {
+    font-size: 28px;
+  }
+
+  .tech-stack .badge {
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+}
+
+/* =============================================
+   DATA PIPELINE ARCHITECTURE SECTION
+============================================= */
+
+/* Pipeline section background */
+#pipeline-section {
+  background: var(--bg-0) !important;
+  position: relative;
+  overflow: hidden;
+}
+#pipeline-section::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* Pipeline flow row */
+.pipeline-flow {
+  display: flex;
+  align-items: stretch;       /* all stages same height */
+  justify-content: center;
+  gap: 0;
+  overflow-x: auto;
+  padding: 10px 0 40px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Individual stage box */
+.pipeline-stage {
+  background: rgba(91,141,238,0.04);
+  border: 1.5px solid rgba(91,141,238,0.18);
+  border-radius: 18px;
+  padding: 30px 22px;
+  min-width: 155px;
+  text-align: center;
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pipeline-stage:hover {
+  background: rgba(91,141,238,0.10);
+  border-color: #5b8dee;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(91,141,238,0.20);
+}
+.pipeline-stage:hover .stage-num {
+  background: linear-gradient(135deg, #5b8dee, #8b78e6);
+  color: #fff;
+}
+
+.stage-num {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: rgba(91,141,238,0.12);
+  border: 1.5px solid rgba(91,141,238,0.32);
+  color: #5b8dee;
+  font-size: 12px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+  transition: all 0.3s ease;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.stage-icon { font-size: 34px; margin-bottom: 10px; line-height: 1; }
+.stage-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px; font-weight: 800;
+  letter-spacing: 3px;
+  color: #5b8dee;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.stage-techs { display: flex; flex-direction: column; gap: 5px; }
+.stage-techs span {
+  font-size: 11px;
+  color: rgba(226,232,240,0.7);
+  background: rgba(255,255,255,0.04);
+  border-radius: 5px;
+  padding: 4px 8px;
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: all 0.2s ease;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+}
+.pipeline-stage:hover .stage-techs span {
+  background: rgba(91,141,238,0.08);
+  border-color: rgba(91,141,238,0.18);
+  color: rgba(226,232,240,0.9);
+}
+
+/* Animated arrow connectors */
+.pipeline-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;         /* vertically centre in stretched row */
+  padding: 0 6px;
+  flex-shrink: 0;
+  gap: 4px;
+}
+.connector-line {
+  width: 36px; height: 2px;
+  background: linear-gradient(90deg, #5b8dee, #8b78e6);
+  background-size: 200% 100%;
+  border-radius: 2px;
+  animation: flowAnim 2s linear infinite;
+}
+.connector-arrow {
+  width: 0; height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #5b8dee;
+  opacity: 0.8;
+}
+@keyframes flowAnim {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* =============================================
+   TERMINAL WINDOW
+============================================= */
+.terminal-window {
+  background: #0d1117;
+  border: 1px solid rgba(91,141,238,0.18);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 50px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+}
+.terminal-header {
+  background: #161b22;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.term-dot { width: 12px; height: 12px; border-radius: 50%; }
+.term-dot.red    { background: #ff5f56; }
+.term-dot.yellow { background: #ffbd2e; }
+.term-dot.green  { background: #27c93f; }
+.terminal-title {
+  font-size: 12px;
+  color: rgba(255,255,255,0.38);
+  margin-left: 10px;
+  font-family: 'SFMono-Regular', Consolas, monospace;
+}
+.terminal-body {
+  padding: 22px 26px;
+  min-height: 180px;
+}
+.terminal-body pre {
+  margin: 0;
+  font-family: 'SFMono-Regular', Consolas, 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.75;
+  color: #e6edf3;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.tc  { color: #8b949e; }  /* comment */
+.tk  { color: #ff7b72; }  /* keyword */
+.ts  { color: #a5d6ff; }  /* string */
+.tf  { color: #d2a8ff; }  /* function */
+.tn  { color: #79c0ff; }  /* number/var */
+.cursor-blink {
+  display: inline-block;
+  width: 8px; height: 15px;
+  background: #5b8dee;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
+
+/* Pipeline section responsive */
+@media (max-width: 768px) {
+  .pipeline-flow { justify-content: flex-start; padding-bottom: 20px; }
+  .pipeline-stage { min-width: 130px; padding: 22px 14px; }
+  .connector-line { width: 22px; }
+  .terminal-body pre { font-size: 11px; }
+}
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	  <!-- Skip to main content for accessibility -->
+	  <a href="#home-section" class="skip-to-content" style="position: absolute; left: -9999px; z-index: 999;">Skip to main content</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" role="navigation" aria-label="Main navigation">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Nikhar Mahendra Singh</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#pipeline-section" class="nav-link"><span>Pipeline</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Nikhar Mahendra Singh</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Engineer  ',
+						'Pipeline Architect  ',
+						'ETL Specialist  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Data Engineer</h2>
+						<p class="hero-tagline">Building <strong style="color:#e2e8f0;font-weight:600;">scalable data systems</strong> at Tekion Corp &middot; Bengaluru</p>
+						<div class="hero-stack-badges">
+							<span>Python</span><span>PySpark</span><span>Airflow</span>
+							<span>Snowflake</span><span>AWS</span><span>dbt</span><span>Redshift</span>
+						</div>
+			            <p><a href="#project-section" class="btn btn-primary py-3 px-4">View Projects</a>
+							<a href="#pipeline-section" class="btn btn-white btn-outline-white py-3 px-4">See Pipeline</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Nikhar Mahendra Singh - Data Engineer" loading="lazy">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Nikhar Mahendra Singh</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Engineer</span></p>
+										<p><span class="title-s">Experience: </span> <span>3+ Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Core Skills</p>
+									<span>SQL & Database Design</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Python & PySpark</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>ETL/ELT Pipelines</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Cloud Platforms (AWS)</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Data Warehousing</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Data Engineer with 3+ years of experience designing and building scalable data pipelines, cloud data warehouses, and real-time data infrastructure. Passionate about turning raw data into reliable, production-grade systems.</p>
+
+								<!-- What I Build cards -->
+								<div class="de-focus-cards">
+									<div class="de-focus-card">
+										<span class="de-icon">⚙️</span>
+										<div>
+											<h5>ETL / ELT Pipelines</h5>
+											<p>Batch &amp; streaming ingestion with Airflow, AWS Glue &amp; PySpark — processing 500GB+ daily</p>
+										</div>
+									</div>
+									<div class="de-focus-card">
+										<span class="de-icon">☁️</span>
+										<div>
+											<h5>Cloud Data Infrastructure</h5>
+											<p>AWS-native data platforms with S3, Redshift &amp; Lambda — reducing infra costs by 30%</p>
+										</div>
+									</div>
+									<div class="de-focus-card">
+										<span class="de-icon">🏛️</span>
+										<div>
+											<h5>Data Warehouse Design</h5>
+											<p>Star-schema dimensional modelling in Snowflake &amp; Redshift powering BI for 100+ users</p>
+										</div>
+									</div>
+								</div>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Engineering &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, &amp; Automotive SaaS</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Superset &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>AWS, PySpark, ETL, Excel, JIRA, &amp; GIT</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Gaming, Traveling, Photography</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+									<a href="https://www.linkedin.com/in/nikharmsingh/" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-2 px-3 ml-3" style="display: inline-block; vertical-align: middle; font-size: 14px;">
+										<span class="icon-linkedin"></span> LinkedIn
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+	<!-- ======= Data Pipeline Architecture Section ======= -->
+	<section class="ftco-section" id="pipeline-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Pipeline</h1>
+					<h2 class="mb-4">Data Pipeline Architecture</h2>
+					<p>End-to-end data engineering — from raw ingestion to production-ready insights</p>
+				</div>
+			</div>
+
+			<!-- Pipeline Flow Diagram -->
+			<div class="row ftco-animate">
+				<div class="col-12">
+					<div class="pipeline-flow">
+						<!-- Stage 1: Sources -->
+						<div class="pipeline-stage">
+							<div class="stage-num">01</div>
+							<div class="stage-icon">🗂️</div>
+							<div class="stage-label">Sources</div>
+							<div class="stage-techs">
+								<span>REST APIs</span>
+								<span>Databases</span>
+								<span>S3 / GCS</span>
+								<span>Kafka</span>
+							</div>
+						</div>
+
+						<div class="pipeline-connector">
+							<div class="connector-line"></div>
+							<div class="connector-arrow"></div>
+						</div>
+
+						<!-- Stage 2: Ingest -->
+						<div class="pipeline-stage">
+							<div class="stage-num">02</div>
+							<div class="stage-icon">📥</div>
+							<div class="stage-label">Ingest</div>
+							<div class="stage-techs">
+								<span>Airflow</span>
+								<span>AWS Glue</span>
+								<span>Lambda</span>
+								<span>Fivetran</span>
+							</div>
+						</div>
+
+						<div class="pipeline-connector">
+							<div class="connector-line"></div>
+							<div class="connector-arrow"></div>
+						</div>
+
+						<!-- Stage 3: Process -->
+						<div class="pipeline-stage">
+							<div class="stage-num">03</div>
+							<div class="stage-icon">⚡</div>
+							<div class="stage-label">Process</div>
+							<div class="stage-techs">
+								<span>PySpark</span>
+								<span>Spark</span>
+								<span>dbt</span>
+								<span>Databricks</span>
+							</div>
+						</div>
+
+						<div class="pipeline-connector">
+							<div class="connector-line"></div>
+							<div class="connector-arrow"></div>
+						</div>
+
+						<!-- Stage 4: Store -->
+						<div class="pipeline-stage">
+							<div class="stage-num">04</div>
+							<div class="stage-icon">🗄️</div>
+							<div class="stage-label">Store</div>
+							<div class="stage-techs">
+								<span>Redshift</span>
+								<span>Snowflake</span>
+								<span>PostgreSQL</span>
+								<span>Delta Lake</span>
+							</div>
+						</div>
+
+						<div class="pipeline-connector">
+							<div class="connector-line"></div>
+							<div class="connector-arrow"></div>
+						</div>
+
+						<!-- Stage 5: Serve -->
+						<div class="pipeline-stage">
+							<div class="stage-num">05</div>
+							<div class="stage-icon">📊</div>
+							<div class="stage-label">Serve</div>
+							<div class="stage-techs">
+								<span>Power BI</span>
+								<span>FastAPI</span>
+								<span>Superset</span>
+								<span>Tableau</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Terminal Code Window -->
+			<div class="row justify-content-center mt-5">
+				<div class="col-lg-10 ftco-animate">
+					<div class="terminal-window">
+						<div class="terminal-header">
+							<span class="term-dot red"></span>
+							<span class="term-dot yellow"></span>
+							<span class="term-dot green"></span>
+							<span class="terminal-title">etl_pipeline.py — data_engineer @ tekion</span>
+						</div>
+						<div class="terminal-body">
+							<pre><code id="terminal-code"></code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Technical Skills Matrix Section -->
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Technical Skills</h1>
+					<h2 class="mb-4">Data Engineering Tech Stack</h2>
+					<p>Comprehensive toolkit for building scalable data pipelines and infrastructure</p>
+				</div>
+			</div>
+
+			<!-- Tech-stack banner -->
+			<div class="row ftco-animate mb-2">
+				<div class="col-12">
+					<div class="tech-stack-banner">
+						<span class="ts-pill core">Python</span>
+						<span class="ts-pill core">PySpark</span>
+						<span class="ts-pill core">SQL</span>
+						<span class="ts-pill core">Apache Airflow</span>
+						<span class="ts-pill core">dbt</span>
+						<span class="ts-pill core">AWS S3</span>
+						<span class="ts-pill core">AWS Glue</span>
+						<span class="ts-pill core">Redshift</span>
+						<span class="ts-pill core">Snowflake</span>
+						<span class="ts-pill">Apache Spark</span>
+						<span class="ts-pill">Delta Lake</span>
+						<span class="ts-pill">Kafka</span>
+						<span class="ts-pill">PostgreSQL</span>
+						<span class="ts-pill">Great Expectations</span>
+						<span class="ts-pill">FastAPI</span>
+						<span class="ts-pill">Docker</span>
+						<span class="ts-pill">Lambda</span>
+						<span class="ts-pill">Power BI</span>
+						<span class="ts-pill">Databricks</span>
+						<span class="ts-pill">Git &amp; GitHub</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Programming Languages -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">Programming Languages</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">Python</span>
+								<span class="badge badge-primary">SQL</span>
+								<span class="badge badge-primary">Scala</span>
+								<span class="badge badge-secondary">Bash/Shell</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Big Data & Processing -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-flasks"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">Big Data & Processing</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">Apache Spark</span>
+								<span class="badge badge-primary">PySpark</span>
+								<span class="badge badge-secondary">Kafka</span>
+								<span class="badge badge-secondary">Hadoop</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cloud Platforms -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-ideas"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">Cloud Platforms</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">AWS (S3, Redshift, Glue)</span>
+								<span class="badge badge-primary">Lambda</span>
+								<span class="badge badge-secondary">Azure</span>
+								<span class="badge badge-secondary">GCP</span>
+								<span class="badge badge-secondary">Databricks</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Databases -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-innovation"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">Databases & Warehouses</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">PostgreSQL</span>
+								<span class="badge badge-primary">MySQL</span>
+								<span class="badge badge-primary">Snowflake</span>
+								<span class="badge badge-secondary">MongoDB</span>
+								<span class="badge badge-secondary">Redis</span>
+								<span class="badge badge-secondary">Cassandra</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Orchestration & Workflow -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-flasks"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">Orchestration & Workflow</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">Apache Airflow</span>
+								<span class="badge badge-primary">DBT</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BI & Visualization -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">BI & Visualization</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">Power BI</span>
+								<span class="badge badge-primary">Tableau</span>
+								<span class="badge badge-primary">Superset</span>
+								<span class="badge badge-secondary">Looker</span>
+								<span class="badge badge-secondary">Metabase</span>
+								<span class="badge badge-secondary">Thoughtspot</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- DevOps & Tools -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-ideas"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">DevOps & Tools</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">Git & GitHub</span>
+								<span class="badge badge-primary">Docker</span>
+								<span class="badge badge-secondary">CI/CD</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Data Quality & Testing -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-innovation"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">Data Quality & Testing</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">Great Expectations</span>
+								<span class="badge badge-primary">dbt Tests</span>
+								<span class="badge badge-secondary">Pytest</span>
+								<span class="badge badge-secondary">Data Validation</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- API & Backend -->
+				<div class="col-md-6 col-lg-4 mb-4">
+					<div class="services-1 ftco-animate">
+						<span class="icon">
+							<i class="flaticon-flasks"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-4">API & Backend Development</h3>
+							<div class="tech-stack">
+								<span class="badge badge-primary">Flask</span>
+								<span class="badge badge-primary">Django</span>
+								<span class="badge badge-primary">FastAPI</span>
+								<span class="badge badge-secondary">REST APIs</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Data Engineer with 3+ years of experience building scalable data pipelines and infrastructure. Proven expertise in ETL/ELT, cloud platforms, big data processing, and data warehouse design.</p>
+          </div>
+        </div>
+
+		<!-- Key Metrics Section -->
+		<div class="row mb-5">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 mb-4">
+						<div class="metric-card ftco-animate">
+							<h4>500GB+</h4>
+							<p>Daily Data Processed</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 mb-4">
+						<div class="metric-card ftco-animate">
+							<h4>99.9%</h4>
+							<p>Pipeline Reliability</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 mb-4">
+						<div class="metric-card ftco-animate">
+							<h4>60%</h4>
+							<p>Performance Improvement</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 mb-4">
+						<div class="metric-card ftco-animate">
+							<h4>50+</h4>
+							<p>Data Pipelines Built</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Apr 2024-Present</span>
+						<h2>Data Analyst - 2 (Data Engineer)</h2>
+						<span class="position">Tekion Corp</span>
+						<p class="mt-4">Leading automobile SaaS company unifying DMS, CRM, Digital Retail, and Analytics
+							<ul>
+								<li>🚀 Built and maintained <strong>20+ RESTful APIs</strong> supporting Data Platform web UI, serving <strong>100+ daily users</strong></li>
+								<li>⚡ Designed scalable ETL pipelines processing <strong>500GB+ daily data</strong> from multiple sources with <strong>99.9% reliability</strong></li>
+								<li>📊 Implemented data quality frameworks reducing data anomalies by <strong>75%</strong> using Great Expectations</li>
+								<li>☁️ Optimized AWS infrastructure (S3, Glue, Lambda) reducing costs by <strong>30%</strong> while improving performance</li>
+								<li>🔧 Automated data workflows using Apache Airflow, reducing manual intervention by <strong>80%</strong></li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jun 2022-Apr 2024</span>
+						<h2>Data Analyst - 1</h2>
+						<span class="position">Tekion Corp</span>
+						<p class="mt-4">Leading automobile SaaS company unifying DMS, CRM, Digital Retail, and Analytics
+							<ul>
+								<li>📈 Analyzed <strong>10M+ records</strong> of campaign, retail, and sales data to identify trends and generate actionable insights</li>
+								<li>🤖 Collaborated with Data Scientists to improve ML models, achieving <strong>15% accuracy improvement</strong> through feature engineering</li>
+								<li>⚙️ Designed and automated Dealership Exit Process, reducing manual work by <strong>50%</strong> and processing time by <strong>3 hours/day</strong></li>
+								<li>📊 Built <strong>15+ Power BI dashboards</strong> providing real-time insights to stakeholders across 5 departments</li>
+								<li>🔍 Performed root cause analysis on data quality issues, improving data accuracy by <strong>40%</strong></li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan 2022- Apr 2022</span>
+						<h2>Programmer Analyst Trainee</h2>
+						<span class="position">Cognizant</span>
+						<p class="mt-4">American multinational IT services and consulting company
+							<ul>
+								<li>🏗️ Built end-to-end Data Warehouse for Customer Information System processing <strong>1M+ customer records</strong></li>
+								<li>📚 Completed intensive training in Python, SQL, Unix, Informatica, Tableau, and IBM Cognos</li>
+								<li>🔄 Developed <strong>10+ ETL pipelines</strong> using Informatica, streamlining data warehouse operations</li>
+								<li>✅ Achieved <strong>100% data accuracy</strong> through comprehensive testing and validation frameworks</li>
+								<li>⏱️ Reduced data loading time by <strong>40%</strong> through query optimization and indexing strategies</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2022</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">KIIT Deemed To Be University</span>
+    					<p class="mt-4">GPA: 8.70 </p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2018</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Vishwa Bandhu Academy</span>
+    					<p class="mt-4">Grade: 70% </p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1mswVs90z86PLrMyLc5fCrnvKPENsmd8l/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Featured Projects</h2>
+            <p>Data Engineering, ETL Pipelines, Backend APIs, and Machine Learning projects showcasing end-to-end solutions</p>
+          </div>
+        </div>
+        <!-- Filter Buttons -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-10 text-center">
+            <div class="project-filters ftco-animate">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="python">Python</button>
+              <button class="filter-btn" data-filter="flask">Flask</button>
+              <button class="filter-btn" data-filter="ml">ML / AI</button>
+              <button class="filter-btn" data-filter="data">Data Engineering</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="row d-flex project-grid" id="project-grid">
+
+          <!-- Enterprise Card 1: Sales Analytics ETL Pipeline -->
+          <div class="col-md-6 d-flex ftco-animate project-item mb-4" data-category="python data">
+            <div class="de-project-card">
+              <div class="de-project-thumb">
+                <pre><span class="dpc-c"># sales_etl_pipeline.py — Tekion Corp</span>
+<span class="dpc-k">from</span> pyspark.sql <span class="dpc-k">import</span> SparkSession
+<span class="dpc-k">import</span> airflow.operators <span class="dpc-k">as</span> ops
+
+<span class="dpc-f">@dag</span>(schedule_interval=<span class="dpc-s">"0 2 * * *"</span>)
+<span class="dpc-k">def</span> <span class="dpc-f">sales_etl</span>():
+    extract   = <span class="dpc-f">S3ToRedshiftOperator</span>(...)
+    transform = <span class="dpc-f">SparkSubmitOperator</span>(...)
+    load      = <span class="dpc-f">RedshiftOperator</span>(...)</pre>
+              </div>
+              <div class="de-card-body">
+                <div class="proj-enterprise-badge">🏢 Tekion Corp &middot; Production</div>
+                <h3>Sales Analytics ETL Pipeline</h3>
+                <p>End-to-end pipeline ingesting 500GB+ daily sales data from DMS &amp; CRM sources, transforming with PySpark, and loading into Redshift. Orchestrated via Airflow with 99.9% uptime.</p>
+                <div class="project-tech-stack">
+                  <span class="tech-badge">PySpark</span>
+                  <span class="tech-badge">Airflow</span>
+                  <span class="tech-badge">AWS Redshift</span>
+                  <span class="tech-badge">S3</span>
+                  <span class="tech-badge">dbt</span>
+                  <span class="tech-badge">Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enterprise Card 2: Data Platform API Layer -->
+          <div class="col-md-6 d-flex ftco-animate project-item mb-4" data-category="python flask api data">
+            <div class="de-project-card">
+              <div class="de-project-thumb">
+                <pre><span class="dpc-c"># data_platform_api.py — Tekion Corp</span>
+<span class="dpc-k">from</span> fastapi <span class="dpc-k">import</span> FastAPI, Depends
+<span class="dpc-k">from</span> sqlalchemy.orm <span class="dpc-k">import</span> Session
+
+app = <span class="dpc-f">FastAPI</span>(title=<span class="dpc-s">"Data Platform API"</span>)
+
+<span class="dpc-f">@app.get</span>(<span class="dpc-s">"/metrics/{dealer_id}"</span>)
+<span class="dpc-k">async def</span> <span class="dpc-f">get_dealer_metrics</span>(
+    dealer_id: int, db: Session):
+    <span class="dpc-k">return</span> <span class="dpc-f">query_warehouse</span>(dealer_id)</pre>
+              </div>
+              <div class="de-card-body">
+                <div class="proj-enterprise-badge">🏢 Tekion Corp &middot; Production</div>
+                <h3>Data Platform API Layer</h3>
+                <p>20+ FastAPI endpoints serving the internal Data Platform UI for 100+ daily users. Queries Redshift &amp; Snowflake warehouses, caches with Redis, and enforces role-based access control.</p>
+                <div class="project-tech-stack">
+                  <span class="tech-badge">FastAPI</span>
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Redshift</span>
+                  <span class="tech-badge">Snowflake</span>
+                  <span class="tech-badge">Redis</span>
+                  <span class="tech-badge">REST API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate project-item mb-4" data-category="python flask api">
+            <div class="blog-entry">
+              <a href="https://github.com/nikharmsingh/TwittonAPI" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" target="_blank" rel="noopener noreferrer" aria-label="Twitton - Twitter Clone APP Project"></a>
+              <div class="text">
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/TwittonAPI" target="_blank" rel="noopener noreferrer">Twitton — Twitter Clone API</a></h3>
+                <p>Full-featured social media backend with RESTful APIs, user authentication, and real-time features</p>
+                <div class="project-tech-stack">
+                  <span class="tech-badge">Flask</span>
+                  <span class="tech-badge">REST API</span>
+                  <span class="tech-badge">SQLite</span>
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">JWT Auth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate project-item mb-4" data-category="python ml data">
+            <div class="blog-entry">
+              <a href="https://github.com/nikharmsingh/digitalfarmingsolulu" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');" target="_blank" rel="noopener noreferrer" aria-label="Digital Farming Solution Project"></a>
+              <div class="text">
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/digitalfarmingsolulu" target="_blank" rel="noopener noreferrer">Digital Farming Solution</a></h3>
+                <p>IoT-based agricultural platform with data analytics for crop monitoring and yield optimization</p>
+                <div class="project-tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">IoT</span>
+                  <span class="tech-badge">Data Analytics</span>
+                  <span class="tech-badge">ML</span>
+                  <span class="tech-badge">Django</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate project-item mb-4" data-category="python flask api">
+            <div class="blog-entry">
+              <a href="https://github.com/nikharmsingh/moneytracker" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');" target="_blank" rel="noopener noreferrer" aria-label="MoneyTracker - Personal Finance Tracker"></a>
+              <div class="text">
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/moneytracker" target="_blank" rel="noopener noreferrer">💰 MoneyTracker</a></h3>
+                <p>Full-stack Flask application for tracking personal finances, expenses, and income with MongoDB backend and RESTful API architecture</p>
+                <div class="project-tech-stack">
+                  <span class="tech-badge">Flask</span>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">REST API</span>
+                  <span class="tech-badge">Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate project-item mb-4" data-category="python flask api data">
+            <div class="blog-entry">
+              <a href="https://github.com/nikharmsingh/leetcode_scraper" class="block-20 zoom-effect" style="background-image: url('images/proj_7.jpg');" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Scraper - Web Scraping Tool"></a>
+              <div class="text">
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/leetcode_scraper" target="_blank" rel="noopener noreferrer">🔍 LeetCode Scraper</a></h3>
+                <p>Flask-based web scraping app for extracting LeetCode problem data — demonstrating data extraction and API development skills</p>
+                <div class="project-tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">Flask</span>
+                  <span class="tech-badge">BeautifulSoup</span>
+                  <span class="tech-badge">REST API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate project-item mb-4" data-category="python ml">
+            <div class="blog-entry">
+              <a href="https://github.com/nikharmsingh/ScreenAssist" class="block-20 zoom-effect" style="background-image: url('images/proj_8.jpg');" target="_blank" rel="noopener noreferrer" aria-label="ScreenAssist - AI Video Query Tool"></a>
+              <div class="text">
+                <h3 class="heading"><a href="https://github.com/nikharmsingh/ScreenAssist" target="_blank" rel="noopener noreferrer">🎥 ScreenAssist — AI Video Query</a></h3>
+                <p>GPT-powered intelligent video analysis tool enabling users to query videos and find relevant clips based on natural language intent</p>
+                <div class="project-tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">GPT/OpenAI</span>
+                  <span class="tech-badge">NLP</span>
+                  <span class="tech-badge">AI/ML</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong><span style="font-size:2rem;font-weight:800;background:linear-gradient(135deg,#5b8dee,#8b78e6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+</span>
+                <span>Years of Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="50">0</strong><span style="font-size:2rem;font-weight:800;background:linear-gradient(135deg,#5b8dee,#8b78e6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+</span>
+                <span>Pipelines Built</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong><span style="font-size:2rem;font-weight:800;background:linear-gradient(135deg,#5b8dee,#8b78e6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">GB+</span>
+                <span>Data Processed Daily</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong><span style="font-size:2rem;font-weight:800;background:linear-gradient(135deg,#5b8dee,#8b78e6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+</span>
+                <span>APIs Developed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> GitHub </span></h2>
+						<div class="heading">
+							<h4>Building <strong>pipelines</strong> that scale, <strong>warehouses</strong> that perform &amp; <strong>APIs</strong> that deliver</h4>
+							<p style="color:rgba(226,232,240,0.65);font-size:14px;margin-top:8px;">Open-source experiments, ETL tooling, and data engineering utilities</p>
+						<br>
+						<p><a href="https://github.com/nikharmsingh" class="btn btn-primary py-3 px-5">View GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bengaluru, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+916395512874">+91 639 5512 874</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:nikharms2504@gmail.com">nikharms2504@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1mswVs90z86PLrMyLc5fCrnvKPENsmd8l/view?usp=sharing">Link</a></p>
+	          </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-12 mt-5 ftco-animate">
+            <div class="contact-form-wrap">
+              <h3 class="text-center mb-4">Send Me a Message</h3>
+              <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+                <div class="row">
+                  <div class="col-md-6 form-group mb-3">
+                    <input type="text" name="name" id="cf-name" class="form-control contact-input" placeholder="Your Name" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6 form-group mb-3">
+                    <input type="email" name="email" id="cf-email" class="form-control contact-input" placeholder="Your Email" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                  <div class="col-md-12 form-group mb-3">
+                    <input type="text" name="subject" id="cf-subject" class="form-control contact-input" placeholder="Subject" required>
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+                  <div class="col-md-12 form-group mb-3">
+                    <textarea name="message" id="cf-message" class="form-control contact-input" rows="5" placeholder="Your Message" required></textarea>
+                    <div class="invalid-feedback">Please enter your message.</div>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary py-3 px-5" id="cf-submit">Send Message</button>
+                    <p id="cf-success" class="mt-3" style="display:none; color:#ffbd39; font-weight:600;">✅ Thanks! Your message has been sent.</p>
+                    <p id="cf-error" class="mt-3" style="display:none; color:#ff6b6b; font-weight:600;">⚠️ Oops! Something went wrong. Please try again.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-5 ftco-animate text-center">
+            <br>
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li class="ftco-animate normal-txt">Find me on &nbsp;</li>
+              <li class="ftco-animate"><a href="https://www.youtube.com/@wizly25" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="icon-youtube"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.linkedin.com/in/nikharmsingh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="icon-linkedin"></span></a></li>
+              <li class="ftco-animate"><a href="https://github.com/nikharmsingh" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="icon-github"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/singhnikhar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="icon-instagram"></span></a></li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+	<script src="js/jquery.min.js" defer></script>
+	<script src="js/jquery-migrate-3.0.1.min.js" defer></script>
+	<script src="js/popper.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/jquery.easing.1.3.js" defer></script>
+	<script src="js/jquery.waypoints.min.js" defer></script>
+	<script src="js/jquery.stellar.min.js" defer></script>
+	<script src="js/owl.carousel.min.js" defer></script>
+	<script src="js/jquery.magnific-popup.min.js" defer></script>
+	<script src="js/aos.js" defer></script>
+	<script src="js/jquery.animateNumber.min.js" defer></script>
+	<script src="js/scrollax.min.js" defer></script>
+
+	<script src="js/main.js" defer></script>
+
+  <script>
+    // Project Filter
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.getAttribute('data-filter');
+        document.querySelectorAll('.project-item').forEach(function(item) {
+          if (filter === 'all' || item.getAttribute('data-category').indexOf(filter) !== -1) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Contact Form async submission
+    var cfForm = document.getElementById('contact-form');
+    if (cfForm) {
+      cfForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var valid = true;
+        cfForm.querySelectorAll('[required]').forEach(function(field) {
+          if (!field.value.trim()) { field.classList.add('is-invalid'); valid = false; }
+          else { field.classList.remove('is-invalid'); }
+        });
+        if (!valid) return;
+        var btn = document.getElementById('cf-submit');
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        fetch(cfForm.action, {
+          method: 'POST',
+          body: new FormData(cfForm),
+          headers: { 'Accept': 'application/json' }
+        }).then(function(res) {
+          if (res.ok) {
+            document.getElementById('cf-success').style.display = 'block';
+            document.getElementById('cf-error').style.display = 'none';
+            cfForm.reset();
+          } else {
+            document.getElementById('cf-error').style.display = 'block';
+          }
+          btn.disabled = false;
+          btn.textContent = 'Send Message';
+        }).catch(function() {
+          document.getElementById('cf-error').style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = 'Send Message';
+        });
+      });
+    }
+
+    // Back to Top
+    const btnTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) { btnTop.classList.add('show'); }
+      else { btnTop.classList.remove('show'); }
+    });
+    btnTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ── Terminal typing animation ──────────────────────────────────────────
+    (function () {
+      var el = document.getElementById('terminal-code');
+      if (!el) return;
+
+      var lines = [
+        '<span class="tc"># Daily ETL Pipeline — Apache Airflow + PySpark</span>',
+        '<span class="tk">from</span> airflow <span class="tk">import</span> DAG',
+        '<span class="tk">from</span> airflow.operators.python <span class="tk">import</span> PythonOperator',
+        '<span class="tk">from</span> pyspark.sql <span class="tk">import</span> SparkSession',
+        '<span class="tk">from</span> pyspark.sql.functions <span class="tk">import</span> col, when, sum',
+        '',
+        '<span class="tc"># ── Step 1: Initialise Spark ──────────────────────────────</span>',
+        '<span class="tn">spark</span> = SparkSession.builder \\',
+        '    .appName(<span class="ts">"sales_etl_pipeline"</span>) \\',
+        '    .config(<span class="ts">"spark.sql.shuffle.partitions"</span>, <span class="ts">"200"</span>) \\',
+        '    .getOrCreate()',
+        '',
+        '<span class="tc"># ── Step 2: Extract from S3 Data Lake ────────────────────</span>',
+        '<span class="tn">df_raw</span> = spark.read.parquet(<span class="ts">"s3://data-lake/raw/sales/"</span>)',
+        '<span class="tf">print</span>(<span class="ts">f"✅ Extracted <span class="tn">{df_raw.count()}</span> records"</span>)',
+        '',
+        '<span class="tc"># ── Step 3: Transform — clean, enrich, aggregate ─────────</span>',
+        '<span class="tn">df_clean</span> = df_raw \\',
+        '    .filter(col(<span class="ts">"status"</span>) == <span class="ts">"active"</span>) \\',
+        '    .withColumn(<span class="ts">"revenue"</span>, col(<span class="ts">"price"</span>) * col(<span class="ts">"qty"</span>)) \\',
+        '    .withColumn(<span class="ts">"tier"</span>, when(col(<span class="ts">"revenue"</span>) > <span class="tn">10000</span>, <span class="ts">"premium"</span>).otherwise(<span class="ts">"standard"</span>))',
+        '',
+        '<span class="tc"># ── Step 4: Load to Redshift Data Warehouse ──────────────</span>',
+        '<span class="tn">df_clean</span>.write \\',
+        '    .format(<span class="ts">"jdbc"</span>) \\',
+        '    .option(<span class="ts">"url"</span>, REDSHIFT_URL) \\',
+        '    .option(<span class="ts">"dbtable"</span>, <span class="ts">"analytics.sales_fact"</span>) \\',
+        '    .mode(<span class="ts">"overwrite"</span>).save()',
+        '<span class="tf">print</span>(<span class="ts">"🚀 Pipeline complete — data warehouse updated"</span>)',
+      ];
+
+      var lineIdx = 0, charIdx = 0, html = '', cursor = '<span class="cursor-blink"></span>';
+
+      function typeNext() {
+        if (lineIdx >= lines.length) {
+          // restart after a pause
+          setTimeout(function () { lineIdx = 0; charIdx = 0; html = ''; el.innerHTML = cursor; typeNext(); }, 3000);
+          return;
+        }
+        var currentLine = lines[lineIdx];
+        if (charIdx < currentLine.length) {
+          // advance one real character, respecting HTML tags
+          if (currentLine[charIdx] === '<') {
+            var closeIdx = currentLine.indexOf('>', charIdx);
+            html += currentLine.substring(charIdx, closeIdx + 1);
+            charIdx = closeIdx + 1;
+          } else {
+            html += currentLine[charIdx];
+            charIdx++;
+          }
+          el.innerHTML = html + cursor;
+          setTimeout(typeNext, 28);
+        } else {
+          html += '\n';
+          lineIdx++;
+          charIdx = 0;
+          el.innerHTML = html + cursor;
+          setTimeout(typeNext, lineIdx < lines.length && lines[lineIdx] === '' ? 60 : 120);
+        }
+      }
+
+      // Start when pipeline section enters viewport
+      var observer = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) {
+          observer.disconnect();
+          typeNext();
+        }
+      }, { threshold: 0.2 });
+      var pipelineSection = document.getElementById('pipeline-section');
+      if (pipelineSection) observer.observe(pipelineSection);
+    })();
+  </script>
+
+  </body>
+</html>
