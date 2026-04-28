@@ -3,28 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nikhar Mahendra Singh — Data Engineer</title>
-  <meta name="description" content="Data Engineer with 3+ years building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure.">
+
+  <!-- Primary Meta Tags -->
+  <title>Nikhar Mahendra Singh — Data Engineer | ETL Pipelines &amp; Cloud Data Infrastructure</title>
+  <meta name="description" content="Data Engineer with 3+ years building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure on AWS, Snowflake, and Redshift. Based in Bengaluru, India.">
+  <meta name="keywords" content="Data Engineer, ETL Pipeline, PySpark, Apache Airflow, Snowflake, AWS Redshift, dbt, Data Warehouse, Python, SQL, Tekion Corp, Bengaluru, Big Data">
   <meta name="author" content="Nikhar Mahendra Singh">
-  <meta property="og:title" content="Nikhar Mahendra Singh — Data Engineer">
-  <meta property="og:description" content="Data Engineer building scalable pipelines at Tekion Corp.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nikharmsingh.github.io/">
+  <meta property="og:title" content="Nikhar Mahendra Singh — Data Engineer">
+  <meta property="og:description" content="Data Engineer with 3+ years building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure on AWS, Snowflake, and Redshift.">
   <meta property="og:image" content="https://nikharmsingh.github.io/images/about-me.png">
+  <meta property="og:image:alt" content="Nikhar Mahendra Singh — Data Engineer">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Nikhar Mahendra Singh">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nikhar Mahendra Singh — Data Engineer">
+  <meta name="twitter:description" content="Data Engineer with 3+ years building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure on AWS, Snowflake, and Redshift.">
+  <meta name="twitter:image" content="https://nikharmsingh.github.io/images/about-me.png">
+  <meta name="twitter:image:alt" content="Nikhar Mahendra Singh — Data Engineer">
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://nikharmsingh.github.io/">
   <link rel="icon" type="image/png" href="images/about-me.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Nikhar Mahendra Singh","url":"https://nikharmsingh.github.io/","sameAs":["https://github.com/nikharmsingh","https://www.linkedin.com/in/nikharmsingh/"],"jobTitle":"Data Engineer","worksFor":{"@type":"Organization","name":"Tekion Corp"}}</script>
+
+  <!-- Structured Data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikhar Mahendra Singh",
+    "url": "https://nikharmsingh.github.io/",
+    "image": "https://nikharmsingh.github.io/images/about-me.png",
+    "description": "Data Engineer with 3+ years building scalable ETL/ELT pipelines, data warehouses, and cloud data infrastructure on AWS, Snowflake, and Redshift.",
+    "email": "nikharmahendrasingh@gmail.com",
+    "jobTitle": "Data Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Tekion Corp",
+      "url": "https://www.tekion.com"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "KIIT Deemed To Be University"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressCountry": "IN"
+    },
+    "knowsAbout": [
+      "Data Engineering", "ETL Pipelines", "ELT Pipelines",
+      "Apache Airflow", "PySpark", "Apache Spark",
+      "Snowflake", "AWS Redshift", "dbt", "Python", "SQL",
+      "Data Warehousing", "Cloud Infrastructure", "AWS", "Databricks"
+    ],
+    "sameAs": [
+      "https://github.com/nikharmsingh",
+      "https://www.linkedin.com/in/nikharmsingh/",
+      "https://www.youtube.com/@wizly25"
+    ]
+  }
+  </script>
+
+  <!-- Performance: preconnect to external origins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://github.com">
+  <link rel="dns-prefetch" href="https://www.linkedin.com">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
 
 <!-- NAV -->
-<nav id="nav">
+<nav id="nav" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#" class="nav-logo">N<span class="accent">.</span>S</a>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -44,8 +104,10 @@
   </div>
 </nav>
 
+<main id="main-content">
+
 <!-- HERO -->
-<section id="hero">
+<section id="hero" aria-label="Hero — introduction">
   <canvas id="hero-canvas"></canvas>
   <div class="hero-content">
     <div class="hero-badge"><span class="status-dot"></span> Available for opportunities</div>
@@ -71,7 +133,7 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="section" aria-label="About me">
   <div class="container">
     <div class="section-label"><span class="label-dot"></span> About Me</div>
     <div class="about-grid">
@@ -99,7 +161,7 @@
       </div>
       <div class="about-profile">
         <div class="profile-card">
-          <img src="images/about-me.png" alt="Nikhar Mahendra Singh" loading="lazy">
+          <img src="images/about-me.png" alt="Nikhar Mahendra Singh — Data Engineer based in Bengaluru, India" width="320" height="320" loading="eager" fetchpriority="high">
           <div class="profile-info">
             <h3>Nikhar Mahendra Singh</h3>
             <span class="profile-role">Data Engineer @ Tekion Corp</span>
@@ -122,7 +184,7 @@
 </section>
 
 <!-- PIPELINE -->
-<section id="pipeline" class="section section-alt">
+<section id="pipeline" class="section section-alt" aria-label="Data engineering workflow">
   <div class="container">
     <div class="section-label"><span class="label-dot"></span> Data Engineering Workflow</div>
     <h2 class="section-title">How Data Flows Through the <span class="accent">Pipeline</span></h2>
@@ -172,7 +234,7 @@
 </section>
 
 <!-- TECH STACK -->
-<section id="stack" class="section">
+<section id="stack" class="section" aria-label="Tech stack">
   <div class="container">
     <div class="section-label"><span class="label-dot"></span> Tech Stack</div>
     <h2 class="section-title">Tools & <span class="accent">Technologies</span></h2>
@@ -207,7 +269,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section section-alt">
+<section id="projects" class="section section-alt" aria-label="Featured projects">
   <div class="container">
     <div class="section-label"><span class="label-dot"></span> Projects</div>
     <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
@@ -261,7 +323,7 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section">
+<section id="experience" class="section" aria-label="Work experience and education">
   <div class="container">
     <div class="section-label"><span class="label-dot"></span> Experience</div>
     <h2 class="section-title">Work <span class="accent">Experience</span></h2>
@@ -336,7 +398,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section section-alt">
+<section id="contact" class="section section-alt" aria-label="Contact">
   <div class="container">
     <div class="section-label"><span class="label-dot"></span> Get In Touch</div>
     <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
@@ -366,11 +428,13 @@
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
   <div class="container">
     <p>Built with ☕ by Nikhar Mahendra Singh · Data Engineer</p>
-    <p class="footer-sub">© 2024 — All rights reserved</p>
+    <p class="footer-sub">© 2026 — All rights reserved</p>
   </div>
 </footer>
 
