@@ -17,7 +17,7 @@
   }
 
   /* ─── Typing Effect ─── */
-  const roles = ['Software Engineer', 'Data Engineer', 'Pipeline Architect', 'Cloud Data Builder', 'API Engineer'];
+  const roles = ['Software Engineer', 'Data & AI', 'Data Lake Builder', 'Data Modeler', 'Pipeline Engineer'];
   const typed = document.getElementById('typed-role');
   if (typed && reduceMotion) {
     typed.textContent = roles[0];
