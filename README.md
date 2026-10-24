@@ -1,19 +1,12 @@
 # Portfolio
 
-Link - https://nikharmsingh.github.io/
+Live: https://nikharmsingh.github.io/
 
-Build & development
- - Install dev dependencies:
+A static single-page site served by GitHub Pages from the repository root. There's no build step.
 
-```bash
-npm install
-```
+- `index.html` — page content and SEO metadata
+- `css/portfolio.css` — styles
+- `js/portfolio.js` — nav, typing/terminal animations, hero particles
+- `images/about-me.png` — profile photo (also used as OG image and favicon)
 
- - Build CSS (compiles `scss/style.scss` → `css/style.min.css`):
-
-```bash
-npm run build
-```
-
-Notes for GitHub Pages
- - This repository is structured to be served from the repository root (GitHub Pages "main" branch → root). The `package.json` and `postcss.config.js` provide a lightweight local build step to produce a minified CSS file you can commit for production. If you want automated builds, I can add a GitHub Actions workflow to compile and commit built assets on push.
+To preview locally: `python3 -m http.server` and open http://localhost:8000.

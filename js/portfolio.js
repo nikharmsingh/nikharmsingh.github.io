@@ -2,18 +2,26 @@
 (function () {
   'use strict';
 
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   /* ─── Mobile Nav Toggle ─── */
   const toggle = document.getElementById('nav-toggle');
   const links = document.getElementById('nav-links');
   if (toggle && links) {
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    const setOpen = (open) => {
+      links.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    };
+    toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
   }
 
   /* ─── Typing Effect ─── */
-  const roles = ['Data Engineer', 'Pipeline Architect', 'Cloud Data Builder', 'ETL Developer', 'API Engineer'];
+  const roles = ['Software Engineer', 'Data Engineer', 'Pipeline Architect', 'Cloud Data Builder', 'API Engineer'];
   const typed = document.getElementById('typed-role');
-  if (typed) {
+  if (typed && reduceMotion) {
+    typed.textContent = roles[0];
+  } else if (typed) {
     let ri = 0, ci = 0, deleting = false;
     function typeLoop() {
       const word = roles[ri];
@@ -31,17 +39,11 @@
 
   /* ─── Hero Canvas Particles ─── */
   const canvas = document.getElementById('hero-canvas');
-  if (canvas) {
+  if (canvas && !reduceMotion) {
     const ctx = canvas.getContext('2d');
     let particles = [];
     let w, h;
-
-    function resize() {
-      w = canvas.width = canvas.offsetWidth;
-      h = canvas.height = canvas.offsetHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
+    let running = false, inView = true, frame = 0;
 
     function createParticles() {
       particles = [];
@@ -54,7 +56,18 @@
         });
       }
     }
-    createParticles();
+
+    function resize() {
+      w = canvas.width = canvas.offsetWidth;
+      h = canvas.height = canvas.offsetHeight;
+      createParticles();
+    }
+    resize();
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resize, 150);
+    });
 
     function drawParticles() {
       ctx.clearRect(0, 0, w, h);
@@ -80,20 +93,33 @@
           }
         }
       }
-      requestAnimationFrame(drawParticles);
+      frame = requestAnimationFrame(drawParticles);
     }
-    drawParticles();
+
+    // Only animate while the hero is visible and the tab is active
+    function update() {
+      const shouldRun = inView && !document.hidden;
+      if (shouldRun && !running) { running = true; drawParticles(); }
+      else if (!shouldRun && running) { running = false; cancelAnimationFrame(frame); }
+    }
+    new IntersectionObserver((entries) => { inView = entries[0].isIntersecting; update(); }).observe(canvas);
+    document.addEventListener('visibilitychange', update);
+    update();
   }
 
   /* ─── Scroll Fade-In ─── */
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-  }, { threshold: 0.1 });
+  if (!reduceMotion) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
 
-  document.querySelectorAll('.section, .pipe-stage, .project-card, .timeline-item, .stack-category, .contact-card, .edu-card').forEach(el => {
-    el.classList.add('fade-in');
-    observer.observe(el);
-  });
+    document.querySelectorAll('.section, .pipe-stage, .project-card, .timeline-item, .stack-category, .contact-card, .edu-card').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  }
 
   /* ─── Terminal Typing ─── */
   const termCode = document.getElementById('terminal-code');
@@ -132,41 +158,49 @@
       'sales_pipeline()',
       '# Pipeline deployed ✓  |  500GB+ daily  |  99.9% uptime'
     ];
-    let li = 0, lci = 0, buf = '';
-    const termObserver = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        termObserver.disconnect();
-        typeTerm();
-      }
-    }, { threshold: 0.3 });
-    termObserver.observe(termCode.closest('.terminal'));
 
-    function typeTerm() {
-      if (li >= lines.length) return;
-      const line = lines[li];
-      if (lci <= line.length) {
-        buf = lines.slice(0, li).join('\n') + (li > 0 ? '\n' : '') + line.slice(0, lci);
-        termCode.textContent = buf + '█';
-        lci++;
-        setTimeout(typeTerm, 18);
-      } else {
-        li++; lci = 0;
-        setTimeout(typeTerm, 80);
+    if (reduceMotion) {
+      termCode.textContent = lines.join('\n');
+    } else {
+      let li = 0, lci = 0, buf = '';
+      const termObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          termObserver.disconnect();
+          typeTerm();
+        }
+      }, { threshold: 0.3 });
+      termObserver.observe(termCode.closest('.terminal'));
+
+      function typeTerm() {
+        if (li >= lines.length) return;
+        const line = lines[li];
+        if (lci <= line.length) {
+          buf = lines.slice(0, li).join('\n') + (li > 0 ? '\n' : '') + line.slice(0, lci);
+          termCode.textContent = buf + '█';
+          lci++;
+          setTimeout(typeTerm, 18);
+        } else {
+          li++; lci = 0;
+          setTimeout(typeTerm, 80);
+        }
       }
     }
   }
 
   /* ─── Nav active on scroll ─── */
-  const sections = document.querySelectorAll('section[id]');
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY + 100;
-    sections.forEach(s => {
-      const top = s.offsetTop, height = s.offsetHeight, id = s.id;
-      const link = document.querySelector('.nav-links a[href="#' + id + '"]');
-      if (link) {
-        if (scrollY >= top && scrollY < top + height) link.style.color = '#5b8dee';
-        else link.style.color = '';
-      }
+  const navLinks = new Map();
+  document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => navLinks.set(a.getAttribute('href').slice(1), a));
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      navLinks.forEach(a => a.classList.remove('active'));
+      const link = navLinks.get(e.target.id);
+      if (link) link.classList.add('active');
     });
-  });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('section[id]').forEach(s => navObserver.observe(s));
+
+  /* ─── Footer year ─── */
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
 })();
